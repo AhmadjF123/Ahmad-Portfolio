@@ -32,20 +32,20 @@ function ContactPage() {
       {/* أيقونات التواصل الاجتماعي */}
       <div className="flex gap-6 mb-8 text-white text-2xl">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin className="hover:text-blue-500 transition duration-300" />
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/AhmadjF123"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub className="hover:text-gray-400 transition duration-300" />
         </a>
-        <a href="mailto:your-email@example.com">
+        <a href="mailto:ahmad.j.farroukh@gmail.com">
           <FaEnvelope className="hover:text-red-500 transition duration-300" />
         </a>
       </div>

@@ -5,7 +5,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative pt-7 px-6 flex justify-between items-center border-b border-gray-400 pb-4">
+    <div className="relative pt-7 px-6 flex justify-between items-center border-b border-gray-400 pb-4 lg:px-20">
       {/* شعار الموقع أو الاسم على اليسار */}
       <div className="text-xl font-bold">Ahmad J Farroukh</div>
 
