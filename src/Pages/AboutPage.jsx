@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaPhp } from "react-icons/fa";
+import { FaReact, FaJava, FaHtml5, FaPython, FaPhp } from "react-icons/fa";
 
 function AboutPage() {
   const [animate, setAnimate] = useState(false);
@@ -22,6 +22,7 @@ function AboutPage() {
       icon: <FaHtml5 className="text-orange-500" />,
     },
     { name: "PHP", level: 40, icon: <FaPhp className="text-indigo-500" /> },
+    { name: "Python", level: 45, icon: <FaPython className="text-yellow-400" /> },
   ];
 
   return (
