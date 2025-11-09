@@ -26,20 +26,14 @@ const projects = [
     code: "https://github.com/AhmadjF123/Tasweeq",
   },
 
-
   {
     name: "Sustainable Transportation",
     description:
       "An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
     image: "/sustainable-transportation.png",
-    demo: "https://sustainable-transportation-psi.vercel.app//",
+    demo: "https://sustainable-transportation-psi.vercel.app",
     code: "https://github.com/AhmadjF123/sustainable-transportation",
   },
-
-
-
-
-  
 ];
 
 function MyProjects() {
