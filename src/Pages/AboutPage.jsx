@@ -15,14 +15,18 @@ function AboutPage() {
       level: 75,
       icon: <FaHtml5 className="text-yellow-400" />,
     },
-    { name: "Java", level: 50, icon: <FaJava className="text-red-500" /> },
+    { name: "Java", level: 40, icon: <FaJava className="text-red-500" /> },
     {
       name: "HTML & CSS",
       level: 85,
       icon: <FaHtml5 className="text-orange-500" />,
     },
-    { name: "PHP", level: 40, icon: <FaPhp className="text-indigo-500" /> },
-    { name: "Python", level: 45, icon: <FaPython className="text-yellow-400" /> },
+    { name: "PHP", level: 30, icon: <FaPhp className="text-indigo-500" /> },
+    {
+      name: "Python",
+      level: 35,
+      icon: <FaPython className="text-yellow-400" />,
+    },
   ];
 
   return (
@@ -42,10 +46,9 @@ function AboutPage() {
           animate ? "opacity-100" : "opacity-0"
         }`}
       >
-        Hello! I'm Ahmad Farroukh, a Computer Engineering graduate and
-        passionate developer. I build web applications using React and
-        JavaScript, and I enjoy learning new technologies and improving my
-        skills continuously.
+        Hello! I'm Ahmad J Farroukh, a Computer Engineer and passionate
+        developer. I build web applications using React and JavaScript, and I
+        enjoy learning new technologies and improving my skills continuously.
       </p>
 
       {/* المهارات */}

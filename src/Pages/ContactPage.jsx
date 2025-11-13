@@ -40,6 +40,10 @@ function ContactPage() {
         I would love to hear from you! Send me a message or connect via social media.
       </p>
 
+      <p>Email: ahmad.j.farroukh@gmail.com</p>
+      <p>Phone Number: +963 985 954 034</p>
+      <br />
+
       <div className="flex gap-6 mb-8 text-white text-2xl">
         <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="hover:text-blue-500 transition duration-300" />

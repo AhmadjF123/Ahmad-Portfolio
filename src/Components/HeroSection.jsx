@@ -7,9 +7,9 @@ function HeroSection() {
       {/* النص */}
       <div className="flex flex-col justify-center text-white max-w-xl text-center md:text-left">
         <p className="text-lg mb-2">Hello, I am</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Ahmad Farroukh</h1>
-        <p className="text-md md:text-lg mb-6">
-          Computer Engineering Student | React & JavaScript Developer
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">Ahmad Farroukh</h1>
+        <p className="text-2xl mb-6">
+          Computer Engineer | React & JavaScript Developer
         </p>
 
         {/* زر CTA */}

@@ -4,7 +4,7 @@ const projects = [
   {
     name: "Perfect Property",
     description:
-      "A real estate portfolio website showcasing property listings with a responsive and clean design built using HTML and CSS.",
+      "(My first project using HTML and CSS, it is not responsive) A real estate portfolio website showcasing property listings with a responsive and clean design built using HTML and CSS.",
     image: "/perfectProperty.png",
     demo: "https://perfect-property.vercel.app",
     code: "https://github.com/AhmadjF123/Perfect-Property",
@@ -12,7 +12,7 @@ const projects = [
   {
     name: "Foodzy",
     description:
-      "A food journal application that helps users track their meals and eating habits by allowing them to log photos of their meals, monitor their mood, and maintain a visual diary of their eating patterns.",
+      "(Build with HTML ,CSS ,Bootstrap) A food journal application that helps users track their meals and eating habits by allowing them to log photos of their meals, monitor their mood, and maintain a visual diary of their eating patterns.",
     image: "/foodzy.png",
     demo: "https://foodzy-sand.vercel.app/",
     code: "https://github.com/AhmadjF123/Foodzy",
@@ -20,7 +20,7 @@ const projects = [
   {
     name: "Tasweeq",
     description:
-      "An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
+      "(Build with, HTML,CSS,Javascript) An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
     image: "/tasweeq.png",
     demo: "https://tasweeq.vercel.app/",
     code: "https://github.com/AhmadjF123/Tasweeq",
@@ -29,7 +29,7 @@ const projects = [
   {
     name: "Sustainable Transportation",
     description:
-      "An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
+      "(Build with react and tailwindCSS) An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
     image: "/sustainable-transportation.png",
     demo: "https://sustainable-transportation-psi.vercel.app",
     code: "https://github.com/AhmadjF123/sustainable-transportation",
@@ -38,7 +38,7 @@ const projects = [
   {
     name: "Exclusive",
     description:
-      "An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
+      "(Build with react and tailwindCSS) An elegant and responsive online store that offers a wide range of digital products, designed with a clean interface and smooth user experience.",
     image: "/exclusive.png",
     demo: "https://exclusivee-phi.vercel.app/",
     code: "https://github.com/AhmadjF123/exclusivee",
