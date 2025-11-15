@@ -47,7 +47,7 @@ const projects = [
   {
     name: "Weather-App",
     description:
-      "(Build with react and tailwindCSS) an application that makes you know the weather in the world",
+      "An interactive weather application where the user types the name of a city and it shows the current weather along with temperature, humidity, and wind speed using the OpenWeatherMap API.",
     image: "/weather_app.png",
     demo: "https://weather-app-kohl-xi-77.vercel.app",
     code: "https://github.com/AhmadjF123/Weather-App",
