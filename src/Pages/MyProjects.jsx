@@ -43,6 +43,15 @@ const projects = [
     demo: "https://exclusivee-phi.vercel.app/",
     code: "https://github.com/AhmadjF123/exclusivee",
   },
+
+  {
+    name: "Weather-App",
+    description:
+      "(Build with react and tailwindCSS) an application that makes you know the weather in the world",
+    image: "/weather_app.png",
+    demo: "https://weather-app-kohl-xi-77.vercel.app",
+    code: "https://github.com/AhmadjF123/Weather-App",
+  },
 ];
 
 function MyProjects() {
