@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <section className="bg-gray-900 min-h-screen flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-20">
       
-      {/* النص */}
+
       <div className="flex flex-col justify-center text-white max-w-xl text-center md:text-left">
         <p className="text-lg mb-2">Hello, I am</p>
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Ahmad Farroukh</h1>
@@ -12,7 +12,7 @@ function HeroSection() {
           Computer Engineer | React & JavaScript Developer
         </p>
 
-        {/* زر CTA */}
+
         <div>
           <a
             href="/AhmadFarroukhCV.pdf"
@@ -25,7 +25,7 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* الصورة */}
+
       <div className="mt-10 md:mt-0">
         <img
           src="/personal.jpg"

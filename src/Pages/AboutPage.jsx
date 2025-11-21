@@ -31,7 +31,7 @@ function AboutPage() {
 
   return (
     <section className="bg-gray-900 min-h-screen text-white px-5 md:px-20 py-20">
-      {/* العنوان */}
+
       <h2
         className={`text-4xl font-bold mb-6 text-center transition-opacity duration-1000 ${
           animate ? "opacity-100" : "opacity-0"
@@ -40,7 +40,7 @@ function AboutPage() {
         About Me
       </h2>
 
-      {/* النبذة */}
+
       <p
         className={`max-w-3xl mx-auto text-center mb-12 text-lg transition-opacity duration-1000 delay-200 ${
           animate ? "opacity-100" : "opacity-0"
@@ -51,7 +51,7 @@ function AboutPage() {
         enjoy learning new technologies and improving my skills continuously.
       </p>
 
-      {/* المهارات */}
+
       <div
         className={`max-w-3xl mx-auto transition-opacity duration-1000 delay-400 ${
           animate ? "opacity-100" : "opacity-0"

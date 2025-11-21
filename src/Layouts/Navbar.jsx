@@ -6,10 +6,10 @@ function Navbar() {
 
   return (
     <div className="relative pt-7 px-6 flex justify-between items-center border-b border-gray-400 pb-4 lg:px-20">
-      {/* شعار الموقع أو الاسم على اليسار */}
+
       <div className="text-xl font-bold">Ahmad J Farroukh</div>
 
-      {/* روابط Navbar للشاشات الكبيرة */}
+
       <div className="hidden lg:flex gap-12">
         <NavLink
           to="/"
@@ -45,7 +45,7 @@ function Navbar() {
         </NavLink>
       </div>
 
-      {/* Hamburger للجوال على الطرف الأيمن */}
+
       <div
         className="lg:hidden flex flex-col justify-between w-7 h-6 cursor-pointer"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -67,7 +67,7 @@ function Navbar() {
         ></span>
       </div>
 
-      {/* Dropdown للجوال */}
+
       {menuOpen && (
         <div className="flex flex-col bg-white w-full  lg:hidden absolute left-0 top-full z-50">
 
