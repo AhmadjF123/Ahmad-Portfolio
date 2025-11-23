@@ -56,8 +56,8 @@ const projects = [
   {
     name: "Stream Vibe",
     description:
-      "An interactive weather application where the user types the name of a city and it shows the current weather along with temperature, humidity, and wind speed using the OpenWeatherMap API.",
-    image: "/weather_app.png",
+      "StreamVibe is a streaming website for watching movies and shows, anytime, anywhere. using the TMDB API.",
+    image: "/stream-vibe.png",
     demo: "https://stream-vibe-olive.vercel.app/",
     code: "https://github.com/AhmadjF123/Stream-Vibe",
   },
