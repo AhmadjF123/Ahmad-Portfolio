@@ -52,6 +52,15 @@ const projects = [
     demo: "https://weather-app-kohl-xi-77.vercel.app",
     code: "https://github.com/AhmadjF123/Weather-App",
   },
+
+  {
+    name: "Stream Vibe",
+    description:
+      "An interactive weather application where the user types the name of a city and it shows the current weather along with temperature, humidity, and wind speed using the OpenWeatherMap API.",
+    image: "/weather_app.png",
+    demo: "https://stream-vibe-olive.vercel.app/",
+    code: "https://github.com/AhmadjF123/Stream-Vibe",
+  },
 ];
 
 function MyProjects() {
