@@ -53,14 +53,14 @@ const projects = [
     code: "https://github.com/AhmadjF123/Weather-App",
   },
 
-  // {
-  //   name: "Stream Vibe",
-  //   description:
-  //     "StreamVibe is a streaming website for watching movies and shows, anytime, anywhere. using the TMDB API.",
-  //   image: "/stream-vibe.png",
-  //   demo: "https://stream-vibe-olive.vercel.app/",
-  //   code: "https://github.com/AhmadjF123/Stream-Vibe",
-  // },
+  {
+    name: "Stream Vibe",
+    description:
+      "StreamVibe is a streaming website for watching movies and shows, anytime, anywhere. using the TMDB API.",
+    image: "/stream-vibe.png",
+    demo: "https://stream-vibe-olive.vercel.app/",
+    code: "https://github.com/AhmadjF123/Stream-Vibe",
+  },
 ];
 
 function MyProjects() {
