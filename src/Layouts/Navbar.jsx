@@ -5,46 +5,15 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative pt-7 px-6 flex justify-between items-center border-b border-gray-400 pb-4 lg:px-20">
-
+    <div className="relative pt-7 px-6 flex justify-between bg-gray-900 text-white items-center pb-4 lg:px-20">
       <div className="text-xl font-bold">Ahmad J Farroukh</div>
 
-
       <div className="hidden lg:flex gap-12">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `${isActive ? "text-primary" : "text-black"}`
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `${isActive ? "text-primary" : "text-black"}`
-          }
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `${isActive ? "text-primary" : "text-black"}`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            `${isActive ? "text-primary" : "text-black"}`
-          }
-        >
-          My Projects
-        </NavLink>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
       </div>
-
 
       <div
         className="lg:hidden flex flex-col justify-between w-7 h-6 cursor-pointer"
@@ -67,47 +36,20 @@ function Navbar() {
         ></span>
       </div>
 
-
       {menuOpen && (
         <div className="flex flex-col bg-white w-full  lg:hidden absolute left-0 top-full z-50">
-
-            
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `p-4 ${isActive ? "text-primary" : "text-black"}`
-            }
-            onClick={() => setMenuOpen(false)}
-          >
+          <a onClick={() => setMenuOpen(false)} href="/">
             Home
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `p-4 ${isActive ? "text-primary" : "text-black"}`
-            }
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `p-4 ${isActive ? "text-primary" : "text-black"}`
-            }
-            onClick={() => setMenuOpen(false)}
-          >
+          </a>
+          <a onClick={() => setMenuOpen(false)} href="/about">
             About
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `p-4 ${isActive ? "text-primary" : "text-black"}`
-            }
-            onClick={() => setMenuOpen(false)}
-          >
-            My Projects
-          </NavLink>
+          </a>
+          <a onClick={() => setMenuOpen(false)} href="/projects">
+            Projects
+          </a>
+          <a onClick={() => setMenuOpen(false)} href="/contact">
+            Contact
+          </a>
         </div>
       )}
     </div>

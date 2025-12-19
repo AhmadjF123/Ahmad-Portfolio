@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <section className="bg-gray-900 min-h-screen flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-20">
+    <section className="bg-gray-900 h-[80vh] flex flex-col md:flex-row justify-between items-center px-5 md:px-20 ">
       
 
       <div className="flex flex-col justify-center text-white max-w-xl text-center md:text-left">

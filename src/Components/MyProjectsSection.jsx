@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react'
 
-const projects = [
+function MyProjectsSection() {
+
+    const projects = [
   {
     name: "Perfect Property",
     description:
@@ -62,10 +64,9 @@ const projects = [
     code: "https://github.com/AhmadjF123/Stream-Vibe",
   },
 ];
-
-function MyProjects() {
   return (
-    <section className="bg-gray-900 min-h-screen px-5 md:px-20 py-20 text-white">
+    <>
+          <section className="bg-gray-900 min-h-screen px-5 md:px-20 py-20 text-white">
       <h2 className="text-4xl font-bold mb-12 text-center">My Projects</h2>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -105,7 +106,8 @@ function MyProjects() {
         ))}
       </div>
     </section>
-  );
+    </>
+  )
 }
 
-export default MyProjects;
+export default MyProjectsSection
