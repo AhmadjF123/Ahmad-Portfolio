@@ -1,82 +1,71 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { FaReact, FaJava, FaHtml5, FaPython, FaPhp } from "react-icons/fa";
+import React from 'react';
+import { FaReact, FaJava, FaHtml5, FaPython, FaPhp } from 'react-icons/fa';
 
 function AboutSection() {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
-
   const skills = [
-    { name: "React", level: 65, icon: <FaReact className="text-blue-400" /> },
-    {
-      name: "JavaScript",
-      level: 75,
-      icon: <FaHtml5 className="text-yellow-400" />,
-    },
-    { name: "Java", level: 40, icon: <FaJava className="text-red-500" /> },
-    {
-      name: "HTML & CSS",
-      level: 85,
-      icon: <FaHtml5 className="text-orange-500" />,
-    },
-    { name: "PHP", level: 30, icon: <FaPhp className="text-indigo-500" /> },
-    {
-      name: "Python",
-      level: 35,
-      icon: <FaPython className="text-yellow-400" />,
-    },
+    { name: "HTML & CSS", level: 85, icon: <FaHtml5 className="text-orange-500" />, color: "bg-orange-500" },
+    { name: "JavaScript", level: 75, icon: <FaHtml5 className="text-yellow-400" />, color: "bg-yellow-400" },
+    { name: "React", level: 65, icon: <FaReact className="text-blue-400" />, color: "bg-blue-400" },
+    { name: "Java", level: 40, icon: <FaJava className="text-red-500" />, color: "bg-red-500" },
+    { name: "Python", level: 35, icon: <FaPython className="text-green-500" />, color: "bg-green-500" },
+    { name: "PHP", level: 30, icon: <FaPhp className="text-indigo-500" />, color: "bg-indigo-500" },
   ];
+
   return (
-    <>
-      <section id="#about" className="bg-gray-900 min-h-screen text-white px-5 md:px-20 py-20">
-        <h2
-          className={`text-4xl font-bold mb-6 text-center transition-opacity duration-1000 ${
-            animate ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          About Me
-        </h2>
+    <section className="relative py-20 lg:py-32 px-6 lg:px-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl lg:text-6xl font-bold text-white mb-4">
+            About <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Me</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
+        </div>
 
-        <p
-          className={`max-w-3xl mx-auto text-center mb-12 text-lg transition-opacity duration-1000 delay-200 ${
-            animate ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          Hello! I'm Ahmad J Farroukh, a Computer Engineer and passionate
-          developer. I build web applications using React and JavaScript, and I
-          enjoy learning new technologies and improving my skills continuously.
-        </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="text-gray-300 space-y-6">
+            <p className="text-lg leading-relaxed">
+              Hello! I'm Ahmad J Farroukh, a <span className="text-blue-400 font-semibold">Computer Engineer</span> and passionate developer specializing in building exceptional web applications.
+            </p>
+            <p className="text-lg leading-relaxed">
+              I build web applications using <span className="text-blue-400 font-semibold">React</span> and <span className="text-blue-400 font-semibold">JavaScript</span>, and I enjoy learning new technologies and improving my skills continuously. My journey in web development has been driven by curiosity and a desire to create meaningful digital experiences.
+            </p>
+            <div className="grid grid-cols-2 gap-4 pt-6">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div className="text-3xl font-bold text-blue-400 mb-1">7+</div>
+                <div className="text-sm text-gray-400">Projects Completed</div>
+              </div>
+              <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div className="text-3xl font-bold text-purple-400 mb-1">6+</div>
+                <div className="text-sm text-gray-400">Technologies</div>
+              </div>
+            </div>
+          </div>
 
-        <div
-          className={`max-w-3xl mx-auto transition-opacity duration-1000 delay-400 ${
-            animate ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <h3 className="text-2xl font-semibold mb-6 text-center">My Skills</h3>
-          <div className="space-y-4">
-            {skills.map((skill) => (
-              <div key={skill.name}>
-                <div className="flex justify-between items-center mb-1">
-                  <div className="flex items-center gap-2">
-                    {skill.icon} <span>{skill.name}</span>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-white mb-6">Technical Skills</h3>
+            {skills.map((skill, index) => (
+              <div key={skill.name} className="group" style={{ animationDelay: `${index * 100}ms` }}>
+                <div className="flex justify-between items-center mb-2">
+                  <div className="flex items-center gap-3">
+                    <div className="text-2xl">{skill.icon}</div>
+                    <span className="text-white font-medium">{skill.name}</span>
                   </div>
-                  <span>{skill.level}%</span>
+                  <span className="text-blue-400 font-semibold">{skill.level}%</span>
                 </div>
-                <div className="w-full bg-gray-700 rounded-full h-4">
+                <div className="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
                   <div
-                    className="bg-blue-500 h-4 rounded-full transition-all duration-1000"
-                    style={{ width: `${animate ? skill.level : 0}%` }}
-                  ></div>
+                    className={`${skill.color} h-full rounded-full transition-all duration-1000 ease-out relative overflow-hidden`}
+                    style={{ width: `${skill.level}%` }}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
