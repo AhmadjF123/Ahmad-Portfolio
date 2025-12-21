@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaReact, FaJava, FaHtml5, FaPython, FaPhp } from 'react-icons/fa';
 
-function AboutSection() {
+
+function AboutSection({projects}) {
   const skills = [
     { name: "HTML & CSS", level: 85, icon: <FaHtml5 className="text-orange-500" />, color: "bg-orange-500" },
     { name: "JavaScript", level: 75, icon: <FaHtml5 className="text-yellow-400" />, color: "bg-yellow-400" },
@@ -31,11 +32,11 @@ function AboutSection() {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
-                <div className="text-3xl font-bold text-blue-400 mb-1">7+</div>
+                <div className="text-3xl font-bold text-blue-400 mb-1">{projects.length}+</div>
                 <div className="text-sm text-gray-400">Projects Completed</div>
               </div>
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
-                <div className="text-3xl font-bold text-purple-400 mb-1">6+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">{skills.length}+</div>
                 <div className="text-sm text-gray-400">Technologies</div>
               </div>
             </div>

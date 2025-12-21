@@ -11,7 +11,7 @@ function HeroSection({ scrollToSection, projectsRef }) {
           </div>
           <p className="text-xl text-gray-400">Hello, I am</p>
           <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Ahmad Farroukh
+            Ahmad J Farroukh
           </h1>
           <p className="text-2xl lg:text-3xl text-gray-300">
             Computer Engineer | React & JavaScript Developer
@@ -19,10 +19,10 @@ function HeroSection({ scrollToSection, projectsRef }) {
           <p className="text-lg text-gray-400 max-w-xl">
             Crafting exceptional web experiences with modern technologies. Passionate about clean code, user experience, and continuous learning.
           </p>
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex justify-center md:justify-start gap-4 flex-wrap">
             <a
               href="/AhmadJibrilFarroukhCV.pdf"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center gap-2"
+              className="group cursor-pointer px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -31,7 +31,7 @@ function HeroSection({ scrollToSection, projectsRef }) {
             </a>
             <button
               onClick={() => scrollToSection(projectsRef, 'projects')}
-              className="px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold border border-slate-700 hover:border-blue-500/50 transition-all duration-300"
+              className="px-8 py-4 cursor-pointer bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold border border-slate-700 hover:border-blue-500/50 transition-all duration-300"
             >
               View Projects
             </button>

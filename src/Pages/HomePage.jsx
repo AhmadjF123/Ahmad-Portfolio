@@ -28,7 +28,6 @@ function HomePage() {
         />
 
         <div ref={heroRef}>
-          {" "}
           <HeroSection />
         </div>
 
@@ -37,7 +36,6 @@ function HomePage() {
         </div>
 
         <div ref={projectsRef}>
-          {" "}
           <MyProjectsSection />
         </div>
 
